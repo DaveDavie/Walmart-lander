@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Walmart Gift Card Reward</title>
+  <meta name="description" content="Explore a promotional gift card offer and follow the steps to review its requirements.">
+
+  <meta name="theme-color" content="#0071ce">
+
+  <style>
+    :root {
+      --blue: #0071ce;
+      --blue-dark: #004f9a;
+      --blue-light: #eaf4ff;
+      --yellow: #ffc220;
+      --text: #202124;
+      --muted: #626b75;
+      --border: #e2e7ed;
+      --white: #ffffff;
+      --background: #f7f9fc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.5;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      width: 100%;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--blue);
+      font-size: 29px;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      text-decoration: none;
+    }
+
+    .spark {
+      width: 27px;
+      height: 27px;
+      color: var(--yellow);
+      flex-shrink: 0;
+    }
+
+    main {
+      width: 100%;
+      padding: 38px 20px 48px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 27px;
+    }
+
+    .offer-label {
+      display: inline-block;
+      margin-bottom: 13px;
+      padding: 6px 12px;
+      border-radius: 30px;
+      background: var(--blue-light);
+      color: var(--blue-dark);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: #172331;
+      font-size: clamp(27px, 5vw, 35px);
+      line-height: 1.2;
+      letter-spacing: -.7px;
+      overflow-wrap: break-word;
+    }
+
+    .hero p {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 17px;
+      background: var(--blue-light);
+      border: 1px solid #d9eaff;
+      border-radius: 12px;
+    }
+
+    .step-number {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .step p {
+      margin: 5px 0 0;
+      color: #263749;
+      font-size: 14px;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    .cta {
+      display: flex;
+      width: 100%;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      border: 0;
+      border-radius: 30px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+      margin-bottom: 32px;
+    }
+
+    .cta:hover {
+      background: var(--blue-dark);
+    }
+
+    .cta:active {
+      transform: scale(.99);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 3px;
+    }
+
+    .faq {
+      margin-bottom: 28px;
+    }
+
+    .faq h2 {
+      margin: 0 0 16px;
+      text-align: center;
+      font-size: 21px;
+      color: #172331;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .faq-question {
+      display: flex;
+      width: 100%;
+      min-height: 54px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 15px;
+      border: 0;
+      background: transparent;
+      color: #273342;
+      text-align: left;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .faq-question:hover {
+      background: #f5f9ff;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      color: var(--blue);
+      font-size: 20px;
+      transition: transform .2s ease;
+    }
+
+    .faq-question[aria-expanded="true"] .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 15px 16px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .disclosure {
+      padding: 13px 14px;
+      margin-bottom: 22px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: #fff;
+      color: #596371;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    footer {
+      padding: 20px;
+      background: #eef5fc;
+      border-top: 1px solid #dce8f5;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: var(--blue-dark);
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer p {
+      margin: 0 auto;
+      max-width: 600px;
+      color: #647080;
+      font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding-top: 52px;
+        padding-bottom: 60px;
+      }
+
+      .container {
+        max-width: 500px;
+      }
+
+      .step {
+        padding: 18px 20px;
+      }
+
+      .cta {
+        margin-bottom: 38px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .site-header {
+        padding: 13px 15px;
+      }
+
+      main {
+        padding: 28px 15px 36px;
+      }
+
+      .brand {
+        font-size: 26px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      .step {
+        padding: 14px 12px;
+        gap: 11px;
+      }
+
+      .faq-question {
+        padding: 13px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Walmart gift card promotion information">
+        <span>Walmart</span>
+        <svg class="spark" viewBox="0 0 32 32" fill="currentColor"
+             aria-hidden="true">
+          <path d="M16 1.5c1.8 0 2.8 6.7 2.8 11.7 4.5-2.4 9.2-4.1 10.1-2.5.9 1.6-4.7 5.6-9.1 8 4.4 2.4 10 6.4 9.1 8-.9 1.6-5.6-.1-10.1-2.5 0 5-1 11.7-2.8 11.7s-2.8-6.7-2.8-11.7c-4.5 2.4-9.2 4.1-10.1 2.5-.9-1.6 4.7-5.6 9.1-8-4.4-2.4-10-6.4-9.1-8 .9-1.6 5.6.1 10.1 2.5C13.2 8.2 14.2 1.5 16 1.5z"
+                transform="translate(0 -1.5) scale(1 .94)"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <span class="offer-label">Promotional Offer</span>
+        <h1>Explore the $750 Walmart Gift Card Offer</h1>
+        <p>Review the following steps and offer requirements.</p>
+      </section>
+
+      <section class="steps" aria-label="Offer steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <p>Tap "Continue" to review the promotional offer.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <p>Review the eligibility requirements and provide the requested information.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <p>Review the sponsored deals and complete any requirements disclosed by the offer provider.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <p>Check the provider's terms to determine whether you qualify for a reward.</p>
+        </div>
+      </section>
+
+      <a
+        class="cta"
+        href="https://giftclick.org/aff_c?offer_id=2442&amp;aff_id=11268&amp;source=findbarg"
+        target="_blank"
+        rel="sponsored noopener noreferrer"
+      >Continue</a>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button"
+                    aria-expanded="false" aria-controls="faq-answer-1">
+              <span>How long does it take to get rewards?</span>
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" hidden>
+              Processing times depend on the promotion provider and whether
+              all eligibility and completion requirements have been met.
+              Review the provider's official terms for details.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+              <span>Do I need to finish all the deals?</span>
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" hidden>
+              Requirements vary by promotion. Check the offer's terms before
+              completing any sponsored deal, including any costs, subscriptions,
+              or cancellation conditions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button"
+                    aria-expanded="false" aria-controls="faq-answer-3">
+              <span>Is this offer officially from Walmart?</span>
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" hidden>
+              This page does not establish that Walmart sponsors or endorses
+              this promotion. Verify the offer directly with Walmart before
+              sharing personal information or completing any requirements.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="disclosure">
+        <strong>Important information:</strong> This is a promotional landing
+        page, not confirmation that a gift card is available or guaranteed.
+        Eligibility, availability, and reward terms must be verified with
+        the offer provider. Walmart is a trademark of its respective owner.
+        This page does not claim official Walmart affiliation.
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <nav class="footer-links" aria-label="Footer links">
+      <a href="https://corporate.walmart.com/privacy-security"
+         target="_blank" rel="noopener noreferrer">Privacy</a>
+      <a href="https://www.walmart.com/help"
+         target="_blank" rel="noopener noreferrer">Help &amp; Terms</a>
+    </nav>
+    <p>
+      Promotional information is subject to the terms of the offer provider.
+      Verify all details before participating.
+    </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var isExpanded =
+          button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+
+        var answerId = button.getAttribute("aria-controls");
+        var answer = document.getElementById(answerId);
+
+        if (answer) {
+          answer.hidden = isExpanded;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
