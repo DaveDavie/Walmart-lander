@@ -469,8 +469,7 @@
       Verify all details before participating.
     </p>
   </footer>
-
-  <script>
+   <script>
     document.querySelectorAll(".faq-question").forEach(function (button) {
       button.addEventListener("click", function () {
         var isExpanded =
@@ -487,11 +486,14 @@
       });
     });
   </script>
-    <script>
+
+  <!-- Vercel Analytics -->
+  <script>
     window.va = window.va || function () {
       (window.vaq = window.vaq || []).push(arguments);
     };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+
 </body>
 </html>
